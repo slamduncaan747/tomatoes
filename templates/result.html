@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generated Quotes</title>
+    <style>
+        .quote-box {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Generated Quotes</h1>
+    {% for quote in quotes %}
+        <div class="quote-box">
+            <p>{{ quote.Quote }}</p>
+            <p>Page: {{ quote.Page }}</p>
+        </div>
+    {% endfor %}
+    <a href="/">Generate More Quotes</a>
+</body>
+</html>
