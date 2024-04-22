@@ -1,5 +1,5 @@
 import pickle
-from langchain.vectorstores import Pinecone
+from langchain_community.vectorstores import Pinecone
 from langchain_community.embeddings import HuggingFaceEmbeddings
 import os
 from fuzzywuzzy import fuzz
